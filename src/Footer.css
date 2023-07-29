@@ -1,0 +1,73 @@
+/* ... (existing styles) ... */
+
+.footer_image {
+    width: 144.826px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-left: 96px;
+    margin-top: 168px;
+  }
+  
+  .Footbar_contents_wrapper {
+    width: 612px;
+    margin-left: 96px;
+    margin-top: 40px;
+    position: relative;
+    padding-bottom: 80px;
+    border-bottom: 0px solid white; /* Add a solid white border at the bottom of the content wrapper */
+    position: relative; 
+  }
+  .Footbar_contents_wrapper::after {
+    content: '';
+  position: absolute;
+  bottom: -5px; /* Adjust the distance between the border line and the content wrapper */
+  left: 0;
+  width: 260%; /* Set the width to 100% to span the content wrapper */
+  height: 1px;
+  background: white;
+  
+  }
+  
+  
+  .Footbar_content1 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    margin-top: 60px;
+  }
+  
+  .Footbar_content2 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+  }
+  
+  .icons_wrapper {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 140px; 
+    gap: 48px;
+    margin-right: 96px;
+  }
+  
+  .icons_wrapper img {
+    margin-left: 10px;
+  }
+.CopyRights{
+    margin-top: 80px;
+    padding-left: 96px;
+    margin-bottom: 20px;
+}
+.Info{
+    padding-left: 96px;
+    padding-bottom: 160px;
+    max-width: 90%;
+}

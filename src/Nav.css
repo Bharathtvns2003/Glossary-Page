@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+.navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* Adjust the z-index as needed */
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 0px;
+  padding-left: 96px;
+  align-items: center;
+  height: 100px;
+  backdrop-filter: blur(24px);
+  border-bottom: 1px solid var(--foreground-16, rgba(255, 255, 255, 0.16));
+background: rgba(0, 0, 0, 0.70);
+backdrop-filter: blur(24px);
+max-width: 100%;
+
+}
+
+
+.navbar-image {
+  height: 16px;
+  cursor: pointer;
+}
+
+.member-login {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; 
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.Investment-Button {
+  color: white;
+  display: flex;
+  height: 48px;
+  padding: 14px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 121px;
+  border: 1px solid var(--foreground-94, rgba(255, 255, 255, 0.94));
+  right: 0;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 48px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.rightele {
+  display: flex;
+  align-items: center;
+  margin-right: 15%;
+}
+
+.leftele {
+  display: flex;
+  align-items: center;
+}
+
+/* Additional styles to align the elements properly */
+.navbar-image img {
+  height: 100%;
+}
+
+.left-right-gap {
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 16px;
+    height: 60px;
+  }
+  
+  .member-login,
+  .Investment-Button {
+    font-size: 14px;
+  }
+}
+.mobile-menu-button {
+  display: none;
+}

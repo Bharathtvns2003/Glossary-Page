@@ -1,0 +1,351 @@
+@import 'styles/colors.scss';
+@import 'styles/font.mixins.scss';
+@import 'styles/z-index-map.scss';
+@import 'styles/common-mixins/sections.scss';
+@import 'styles/common-mixins/breakpoints.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.nav {
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+.navLink {
+  text-decoration: none;
+}
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .navBtn {
+  display: none;
+}
+
+.nav > .navLinks {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .navLinks > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none !important;
+  color: #efefef;
+}
+
+.nav > #navCheck {
+  display: none;
+}
+.myclass {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .nav > .navBtn {
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    top: 24px !important;
+    z-index: map-get($z-index, 'navbar');
+  }
+  .nav > .navBtn > label {
+    display: inline-block;
+    width: auto;
+    height: 70px;
+    padding: 0;
+  }
+  .nav > .navLinks {
+    z-index: map-get($z-index, 'navbar');
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0px;
+    background: $bg-black;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 100px;
+    left: 0px;
+  }
+  .nav > .navLinks > a {
+    text-decoration: none !important;
+    display: block;
+    width: 100%;
+  }
+  .nav > #navCheck:not(:checked) ~ .navLinks {
+    height: 0px;
+  }
+  .nav > #navCheck:checked ~ .navLinks {
+    height: calc(100vh);
+    overflow-y: auto;
+  }
+  .nav > #navCheck:checked ~ label .myclass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $bg-black;
+  }
+  .navItem {
+    padding: 10px 0px;
+  }
+}
+
+/*//from navbar*/
+.isDarkMode {
+  &.active {
+    color: hsla(0, 0%, 100%, 0.94);
+  }
+}
+.navWrapper {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  @include nav-section;
+
+  .navbarHeader {
+    padding: 0;
+    position: relative;
+
+    .container-fluid {
+      align-items: end;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .myclass {
+    display: none;
+  }
+
+  .navbar-toggl {
+    position: relative;
+    top: 8px;
+    right: 10px;
+  }
+
+  .logoBrand {
+    cursor: pointer;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle !important;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .navNav {
+    margin: 0px;
+    list-style: none;
+    .navItem {
+      display: flex;
+      align-items: center;
+      a {
+        @include Inter-Medium;
+        font-size: 16px;
+        line-height: 28px;
+
+        /* identical to box height, or 175% */
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #6d6d6d;
+        position: relative;
+        // padding: 42px 0 36px 0;
+        margin: 0 30px;
+
+        &:hover {
+          @include Inter-SemiBold;
+          font-size: 16px;
+          line-height: 28px;
+          color: #000000;
+        }
+
+        &.active {
+          @include Inter-Bold;
+          font-size: 16px;
+          line-height: 28px;
+          border-bottom: 4px solid #fbc392;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .navNav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+  .navWrapper {
+    flex-wrap: nowrap;
+  }
+  .navCollapse {
+    display: flex !important;
+    flex-basis: auto;
+    align-items: center;
+  }
+}
+
+.borderedNav {
+  border-bottom: 1px solid #eaebef;
+}
+.darkNav {
+  .borderedNav {
+    background: $bg-black;
+    border-bottom: 1px solid $secondary-border;
+  }
+
+  .navWrapper {
+    .navNav {
+      .navItem {
+        a {
+          color: $text-white-70;
+
+          &:hover {
+            color: $text-white-94;
+          }
+
+          &.active {
+            border-bottom: 4px solid #fbc392;
+          }
+        }
+      }
+    }
+  }
+}
+
+.fixedNav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: map-get($z-index, 'navigationBar');
+  height: 70px;
+}
+.darkNav,
+.fixedNav {
+  .nav {
+    .logoBrand {
+      img {
+        max-height: 16px;
+        width: auto;
+      }
+    }
+    .navNav {
+      gap: 40px;
+      .navItem {
+        @include Poppins-Regular;
+        font-weight: 500;
+        a {
+          text-transform: unset;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: unset;
+          color: $text-white-94;
+          margin: unset;
+          text-transform: unset;
+          @media screen {
+          }
+        }
+        button {
+          max-height: 48px;
+          @include Poppins-Regular;
+          font-weight: 500;
+          color: $text-white-94;
+          padding: 14px 24px;
+          background: rgba(255, 255, 255, 0.1);
+          border: 1px solid rgba(255, 255, 255, 0.5);
+          border-radius: 72px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          font-size: 16px;
+          line-height: 20px;
+          span {
+            background-image: url('images/components/header/arrow-stroke-white.svg');
+            background-size: cover;
+            height: 12px;
+            width: 12px;
+            transition: all 300ms ease-in-out;
+            transform: translateX(4px);
+          }
+          &:hover {
+            span {
+              transform: translateX(8px);
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .nav {
+      .logoBrand {
+        img {
+          height: 14px;
+          width: auto;
+        }
+      }
+      .navLinks {
+        top: 70px;
+        // border-top: 1px solid $secondary-border;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .navWrapper {
+    height: 70px;
+    .navNav {
+      padding-left: 24px;
+      padding-top: 50px;
+    }
+    .navNav .navItem a {
+      text-decoration: none;
+      padding: 10px 0;
+      height: 48px;
+      top: 0;
+      margin: 0;
+    }
+  }
+
+  .fixedNav {
+    .nav > .navBtn {
+      position: unset;
+      label {
+        height: 70px;
+        width: auto;
+        padding: 26px 0px 24px 24px;
+      }
+    }
+    .navWrapper {
+      height: 70px;
+      .navNav {
+        padding-top: 25px;
+        .navItem a {
+          text-transform: uppercase;
+          color: $text-white-70;
+          letter-spacing: 0.08em;
+        }
+      }
+    }
+  }
+}
