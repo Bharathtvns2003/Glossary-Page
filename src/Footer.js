@@ -14,8 +14,7 @@ function Footer() {
         <img src={logo} alt="Logo" />
       </div>
       <div className="Footbar_contents_wrapper">
-        <span className='Footbar_content1'>You are building india's future,</span>
-        <span className='Footbar_content2'>we are building yours.</span>
+        <span className='Footbar_content1'><strong>You are building india's future,</strong>we are building yours.</span>
       </div>
       <div className="icons_wrapper">
         <img src={LinkedIn} alt="LinkedIn" />
@@ -24,6 +23,7 @@ function Footer() {
         <img src={twitter} alt="Twitter" />
         <img src={yt} alt="YouTube" />
       </div>
+     
      
       <div className='CopyRights'>
       <p>2021 dezerv. All Rights Reserved</p>

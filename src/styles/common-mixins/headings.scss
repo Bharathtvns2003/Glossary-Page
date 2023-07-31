@@ -1,0 +1,181 @@
+@import 'styles/font.mixins.scss';
+@import 'styles/colors.scss';
+@import './breakpoints.scss';
+
+@mixin heading-codenext-white {
+  @include Code-Next-ExtraBold;
+
+  font-size: 52px;
+  line-height: 59px;
+  letter-spacing: -0.03em;
+  color: $text-white-94;
+
+  @media (max-width: 992px) {
+    font-size: 45px;
+    line-height: 52px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 38px;
+    line-height: 45px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+@mixin common-h1 {
+  @include Poppins-Light;
+  font-size: 72px;
+  line-height: 80px;
+  letter-spacing: -0.01em;
+  color: $text-white-100;
+  margin: 0;
+  strong {
+    @include Poppins-Bold;
+  }
+  @media (max-width: $breakpoint-sm) {
+    font-size: 40px;
+    line-height: 46px;
+  }
+}
+
+@mixin common-h2 {
+  @include Poppins-Light;
+  font-size: 56px;
+  line-height: 72px;
+  letter-spacing: -0.01em;
+  color: $text-white-100;
+  margin: 0;
+  strong {
+    @include Poppins-Bold;
+  }
+  @media (max-width: $breakpoint-sm) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+@mixin common-h3 {
+  @include Poppins-Light;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.01em;
+  color: $text-white-100;
+  margin: 0;
+  strong {
+    @include Poppins-Bold;
+  }
+  @media (max-width: $breakpoint-sm) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@mixin common-h4 {
+  @include Poppins-SemiBold;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.01em;
+  color: $text-white-100;
+  margin: 0;
+  strong {
+    @include Poppins-Bold;
+  }
+  @media (max-width: $breakpoint-sm) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+@mixin common-sub-h1 {
+  @include Poppins-SemiBold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  color: $text-white-100;
+  margin: 0;
+  @media (max-width: $breakpoint-sm) {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@mixin common-sub-h2 {
+  @include Poppins-Light;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  color: $text-white-100;
+  margin: 0;
+  strong {
+    @include Inter-Regular;
+  }
+}
+
+@mixin common-sub-h3 {
+  @include Poppins-Light;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: $text-white-100;
+  margin: 0;
+  strong {
+    @include Poppins-SemiBold;
+  }
+  @media (max-width: $breakpoint-sm) {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@mixin common-body {
+  @include Inter-Regular;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0em;
+  color: $text-white-70;
+  margin: 0;
+  @media (max-width: $breakpoint-sm) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@mixin common-caption-bold {
+  @include Inter-SemiBold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: $text-white-100;
+  margin: 0;
+}
+
+@mixin common-caption-regular {
+  @include Inter-SemiBold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: $text-white-100;
+  margin: 0;
+}
+
+@mixin common-tiny-text {
+  @include Inter-Regular;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: $text-white-50;
+  margin: 0;
+}
+
+@mixin common-label-text {
+  @include Poppins-Light;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  color: $text-white-50;
+  margin: 0;
+}

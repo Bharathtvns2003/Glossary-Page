@@ -1,0 +1,112 @@
+// Background colors
+$screen-background: #111111;
+$background-op-10: rgba(255, 255, 255, 0.1);
+$background-op-8: rgba(255, 255, 255, 0.08);
+$backdrop-background: rgba(46, 46, 46, 0.6);
+$hr-background: rgba(255, 255, 255, 0.16);
+$progress-background: #2d9b95;
+$aspargus-background: rgba(147, 188, 99, 0.15);
+$light-grey: rgba(255, 255, 255, 0.3);
+$mid-grey: rgba(255, 255, 255, 0.08);
+$mid-grey-hex: #2b2b2b;
+$secondary-background-hex: #191919;
+$light-grey-hex: #4d4d4d;
+$hr-background-hex: #292929;
+$background-dark-grey: #151515;
+$background-op-8-hex: #282828;
+$background-grey: rgb(20, 20, 20);
+// Button colors
+$btn-primary: #fbc392;
+$btn-secondary: rgba(251, 195, 146, 0.12);
+$btn-primary-text: #000000;
+$btn-secondary-text: #fbc392;
+$btn-primary-disabled: rgba(255, 255, 255, 0.16);
+$btn-primary-disabled-text: rgba(251, 195, 146, 0.3);
+$btn-secondary-disabled: rgba(251, 195, 146, 0.06);
+$btn-secondary-disabled-text: rgba(251, 195, 146, 0.3);
+$btn-primary-disabled-hex: #3e3e3e;
+// border colors
+$primary-border: rgba(255, 255, 255, 0.7);
+$secondary-border: rgba(255, 255, 255, 0.16);
+
+// Text colors
+$primary-light-text: #000;
+$secondary-heading-text: #ed8b35;
+$primary-error: rgba(150, 25, 47, 1);
+$primary-success: rgba(45, 155, 149, 1);
+$primary-grey: #111111;
+$aspargus-text: #93bc63;
+$error-text: #ed8b35;
+$primary-text-hex: #ffffff;
+$secondary-text-hex: #a3a5a5;
+
+// Background
+$bg-black: #000000;
+$bg-grey-15: #151515;
+$bg-grey: #191919;
+$bg-black-50: rgba(0, 0, 0, 0.5);
+$bg-white-16: rgba(255, 255, 255, 0.1);
+$bg-white-10: rgba(255, 255, 255, 0.1);
+$bg-white-07: rgba(255, 255, 255, 0.1);
+$bg-white-08: rgba(255, 255, 255, 0.07);
+$bg-white-03: rgba(255, 255, 255, 0.03);
+$bg-white-05: rgba(255, 255, 255, 0.05);
+
+// Text colors with opacity
+$text-white-50: rgba(255, 255, 255, 0.5);
+$text-white-60: rgba(255, 255, 255, 0.6);
+$text-white-70: rgba(255, 255, 255, 0.7);
+$text-white-80: rgba(255, 255, 255, 0.8);
+$text-white-94: rgba(255, 255, 255, 0.94);
+$text-white-100: rgba(255, 255, 255, 1);
+$text-white-30: rgba(255, 255, 255, 0.3);
+$text-white-20: rgba(255, 255, 255, 0.2);
+$text-white-40: rgba(255, 255, 255, 0.4);
+$text-white: rgba(255, 255, 255);
+$text-primary: #fbc392;
+
+// Borders
+$border-white-10: rgba(255, 255, 255, 0.1);
+$border-white-16: rgba(255, 255, 255, 0.16);
+$border-white-30: rgba(255, 255, 255, 0.3);
+$border-white-50: rgba(255, 255, 255, 0.5);
+$border-white-70: rgba(255, 255, 255, 0.7);
+$border-white: rgba(255, 255, 255, 1);
+
+// deprecated colors but getting used in some files
+$colorDrarkBlue: #070f2e;
+$colorText: #bfbfbf;
+$borderColor: #424242;
+$colorBg: #fcfcfc99;
+$colorWhite: #fff;
+$colorBtn: #0a9f83;
+$colorGrad: #eeeeee99;
+$colorBoxShadow: #0000000d;
+$headerBgColor0: #211a2e;
+$headerBgColor1: #333038;
+$headerBoxShadow: #dedede;
+$colorBlack: #000;
+$regColorText: #081517;
+$regColorVeryfyText: #828282;
+$regBtn0: #211a2e;
+$regBtn1: #333038;
+$regBtn2: #dedede;
+$regBtnBorder: #bfbfbf;
+$regResendBtn: #d8d8d8;
+$regBackBtn: #828282;
+$regResendColorText: #767676;
+$headerBorderMenuColor: #62626224;
+$closeColor: #ebf4f4;
+$colorHover: #eeeeee;
+$commentColor: #828282;
+$buttonsColor: #dce2e4;
+$buttonTextColor: #828282;
+$white: #ffffff;
+$titleColor: #000000;
+$copyBtnColor: #767676;
+$gmailUndidtedTextColor: #626262;
+$paleWhite: #f5f6f8;
+$paleBrown: #eaebef;
+$fadeBrown: #6d6d6d;
+$bageWhite: #f8f9fa;
+$gradeWhite: #f4f5f7;

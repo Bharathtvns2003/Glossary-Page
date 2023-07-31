@@ -1,0 +1,88 @@
+@import 'styles/common-mixins/breakpoints.scss';
+@import 'styles/font.mixins.scss';
+@import 'styles/colors.scss';
+
+@mixin common-section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 200px 100px;
+
+  @media (max-width: $breakpoint-lg) {
+    padding: 175px 75px;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    padding: 150px 50px;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    padding: 120px 24px;
+  }
+}
+
+@mixin single-bonds-section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 96px;
+
+  @media (max-width: $breakpoint-md) {
+    padding: 50px 50px;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    padding: 48px 24px;
+  }
+}
+
+@mixin bonds-listing-section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 100px;
+
+  @media (max-width: $breakpoint-md) {
+    padding: 50px 50px;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    padding: 32px 24px;
+  }
+}
+
+@mixin nav-section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 100px;
+
+  @media (max-width: $breakpoint-lg) {
+    padding: 0px 75px;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    padding: 0px 50px;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    padding: 0px 24px;
+  }
+}
+
+@mixin wc-section {
+  @include common-section;
+
+  @media (max-width: $breakpoint-sm) {
+    padding: 80px 24px;
+  }
+}
+
+@mixin pms-section {
+  margin: 0 auto;
+  padding: 80px 100px;
+
+  @media (max-width: $breakpoint-md) {
+    padding: 50px 50px;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    padding: 32px 24px;
+  }
+}

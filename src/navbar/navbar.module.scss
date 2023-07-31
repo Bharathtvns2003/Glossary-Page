@@ -1,9 +1,7 @@
-@import 'styles/colors.scss';
-@import 'styles/font.mixins.scss';
-@import 'styles/z-index-map.scss';
-@import 'styles/common-mixins/sections.scss';
-@import 'styles/common-mixins/breakpoints.scss';
-
+@import '../styles/colors.scss';
+@import '../styles/font.mixins.scss';
+@import '../styles/z-index-map.scss';
+@import 'styles/commonMixins/breakpoints.scss';
 * {
   box-sizing: border-box;
 }

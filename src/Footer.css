@@ -16,16 +16,17 @@
     padding-bottom: 80px;
     border-bottom: 0px solid white; /* Add a solid white border at the bottom of the content wrapper */
     position: relative; 
+    word-wrap: break-word; /* Add this property to wrap the text */
   }
+  
   .Footbar_contents_wrapper::after {
     content: '';
-  position: absolute;
-  bottom: -5px; /* Adjust the distance between the border line and the content wrapper */
-  left: 0;
-  width: 260%; /* Set the width to 100% to span the content wrapper */
-  height: 1px;
-  background: white;
-  
+    position: absolute;
+    bottom: -5px; /* Adjust the distance between the border line and the content wrapper */
+    left: 0;
+    width: 260%; /* Set the width to 100% to span the content wrapper */
+    height: 1px;
+    background: white;
   }
   
   
@@ -34,20 +35,12 @@
     font-family: Poppins;
     font-size: 56px;
     font-style: normal;
-    font-weight: 700;
     line-height: 64px;
     margin-top: 60px;
+    word-wrap: normal;
   }
   
-  .Footbar_content2 {
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 64px;
-  }
-  
+ 
   .icons_wrapper {
     display: flex;
     position: absolute;
@@ -70,4 +63,7 @@
     padding-left: 96px;
     padding-bottom: 160px;
     max-width: 90%;
+}
+@media (max-width: 768px) {
+
 }

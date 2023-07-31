@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import { NAVBAR_VARIANT } from 'constants/navigation.constants';
-import { DEZERV_LOGO_WHITE_URL } from 'constants/pages.constants';
+import { NAVBAR_VARIANT } from '../navigation.constants';
+import { DEZERV_LOGO_WHITE_URL } from '../pages.constants';
 
-import whiteClose from 'images/components/header/close-white.svg';
-import whiteMenu from 'images/components/header/menu-white.svg';
+import whiteClose from '../header/close-white.svg';
+import whiteMenu from '../header/menu-white.svg';
 
-import { extractAndSetUtmParamsToLS } from 'utils/utm.utils';
+import { extractAndSetUtmParamsToLS } from '../utm.utils';
 
 import * as styles from './navbar.module.scss';
 

@@ -1,0 +1,33 @@
+@mixin animate-card {
+  will-change: transform;
+  transform: translateY(50px);
+}
+
+@mixin animate-card-start {
+  transition: transform 750ms;
+  transform: translateY(0px);
+}
+
+@mixin animate-card-text {
+  opacity: 0;
+  transition: all 650ms ease-in;
+  transition-delay: 350ms;
+  transform: translateY(80px);
+}
+
+@mixin animate-card-text-start {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+@mixin animate-card-fly-in {
+  // will-change: transform;
+  transition: all 600ms ease-in;
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+@mixin animate-card-fly-in-start {
+  transform: translateY(0px);
+  opacity: 1;
+}

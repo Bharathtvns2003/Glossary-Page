@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@mixin Code-Next {
+  font-family: 'codeNext';
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin Code-Next-ExtraBold {
+  font-family: 'codeNextExtraBold';
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: -0.03em;
+}
+
+@mixin Inter {
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin Inter-Light {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin Inter-Regular {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin Inter-Medium {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin Inter-SemiBold {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin Inter-Bold {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin Inter-Extra-Bold {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+// Code Next Mixins
+@mixin Code-Next-ExtraBold {
+  font-family: 'codeNextExtraBold';
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: -0.03em;
+}
+
+@mixin Code-Next-Heavy {
+  font-family: 'Code-Next-Heavy';
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: -0.03em;
+}
+
+// Poppins mixins
+@mixin Poppins-Light {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin Poppins-Regular {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin Poppins-Medium {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin Poppins-SemiBold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin Poppins-Bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin Poppins-ExtraBold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
