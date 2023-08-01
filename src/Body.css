@@ -155,6 +155,9 @@
     overflow-y: scroll;
     display: none;
 }
+.show{
+    display: flex;
+}
 
 .Sidebar button {
     color: rgba(255, 255, 255, 0.6);
