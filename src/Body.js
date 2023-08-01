@@ -5,12 +5,37 @@ function Body() {
   const [activeSection, setActiveSection] = useState('A');
 
   useEffect(() => {
-    // Scroll to the active section
     const sectionElement = document.getElementById(activeSection);
     if (sectionElement) {
       sectionElement.scrollIntoView({ behavior: 'smooth' });
     }
   }, [activeSection]);
+
+  useEffect(() => {
+    const isMobileDevice = window.innerWidth <= 768;
+    const sidebar = document.querySelector('.Sidebar');
+    const headingA = document.querySelector('.Body_SubHeading');
+
+    const handleScroll = () => {
+      const headingRect = headingA.getBoundingClientRect();
+      const isPassedHeadingA = headingRect.bottom <= 0;
+
+      if (isPassedHeadingA && !isMobileDevice ) {
+        sidebar.style.display = 'flex'; // Show the sidebar when not passing through heading A
+      } else {
+        sidebar.style.display = 'none'; // Hide the sidebar when passing through heading A
+      }
+      
+    };
+
+    // Attach the scroll event listener to the window
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup: Remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div className='Body'>
