@@ -64,7 +64,7 @@
     background: black;
     display: flex;
     align-items: center;
-    gap: 34px;
+    gap: 25px;
     left: 0;
     z-index: 2;
     padding-left: 96px;
@@ -139,7 +139,7 @@
 
 .Sidebar {
     height: 100%;
-    width: 100px;
+    width: 42px;
     position: fixed;
     top: 0;
     right: 0;
@@ -151,7 +151,7 @@
     align-items: center;
     padding-top: 80px;
     z-index: 1;
-    gap: 5px;
+    gap: 0px;
     overflow-y: scroll;
 }
 
