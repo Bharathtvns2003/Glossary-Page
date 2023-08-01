@@ -13,7 +13,9 @@ function Footer() {
       <div className="footer_image">
         <img src={logo} alt="Logo" />
       </div>
-      <div>Footbar</div>
+      <div className="Footbar_contents_wrapper">
+        <span className='Footbar_content1'><strong>You are building india's future,</strong>we are building yours.</span>
+      </div>
       <div className="icons_wrapper">
         <img src={LinkedIn} alt="LinkedIn" />
         <img src={facebook} alt="Facebook" />
