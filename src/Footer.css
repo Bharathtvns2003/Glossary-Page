@@ -1,4 +1,3 @@
-/* ... (existing styles) ... */
 
 .footer_image {
     width: 144.826px;
@@ -14,21 +13,17 @@
     margin-top: 40px;
     position: relative;
     padding-bottom: 80px;
-    border-bottom: 0px solid white; /* Add a solid white border at the bottom of the content wrapper */
     position: relative; 
     word-wrap: break-word; /* Add this property to wrap the text */
   }
-  
-  .Footbar_contents_wrapper::after {
-    content: '';
-    position: absolute;
-    bottom: -5px; /* Adjust the distance between the border line and the content wrapper */
-    left: 0;
-    width: 260%; /* Set the width to 100% to span the content wrapper */
-    height: 1px;
-    background: white;
-  }
-  
+.footer_line {
+  position: absolute;
+  bottom: 0;
+  left: 96px;
+  width: calc(100% - 192px); /* Reduce the width by 192px (96px on each side) */
+  height: 0.8px;
+  background-color: white;
+}
   
   .Footbar_content1 {
     color: #FFF;
@@ -63,7 +58,4 @@
     padding-left: 96px;
     padding-bottom: 160px;
     max-width: 90%;
-}
-@media (max-width: 768px) {
-
 }

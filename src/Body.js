@@ -45,7 +45,6 @@ function Body() {
 
         {/* Add the rest of the alphabet buttons here */}
       </div>
-
       <div className='A_Z_Box'>
         <button onClick={() => setActiveSection('A')}>A</button>
         <button onClick={() => setActiveSection('B')}>B</button>

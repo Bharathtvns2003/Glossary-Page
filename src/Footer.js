@@ -23,7 +23,10 @@ function Footer() {
         <img src={twitter} alt="Twitter" />
         <img src={yt} alt="YouTube" />
       </div>
-     
+      <div className='Footbar_line'>
+        {/* Add the line under the Footer_line */}
+        <div className="footer_line"></div>
+      </div>
      
       <div className='CopyRights'>
       <p>2021 dezerv. All Rights Reserved</p>
