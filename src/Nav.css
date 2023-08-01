@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-
 .navbar {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999; /* Adjust the z-index as needed */
+  z-index: 999;
   display: flex;
   justify-content: space-between;
   padding: 26px 0px;
@@ -18,9 +17,7 @@
   background: rgba(0, 0, 0, 0.70);
   backdrop-filter: blur(24px);
   max-width: 100%;
-
 }
-
 
 .navbar-image {
   height: 16px;
@@ -33,7 +30,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 20px; 
+  line-height: 20px;
   cursor: pointer;
   white-space: nowrap;
 }
@@ -87,6 +84,35 @@
     font-size: 14px;
   }
 }
+
 .mobile-menu-button {
   display: none;
+}
+
+@media (max-width: 430px) {
+  /* Adjust the fill for elements that need it to fit within the mobile menu width */
+  .navbar {
+    padding: 10px 16px;
+    height: 60px;
+    position: relative;
+  }
+  
+  .member-login,
+  .Investment-Button {
+    font-size: 12px;
+    
+  }
+  .rightele{
+    margin-right: 40px;
+  }
+  .Investment-Button{
+    height: 10px;
+  }
+  .member-login{
+    margin-left: 20px;
+  }
+  
+  .navbar-image img {
+    height: 12px; /* Adjust the height of the image to fit within the mobile menu */
+  }
 }
