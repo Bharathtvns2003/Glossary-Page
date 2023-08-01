@@ -14,7 +14,7 @@ function Footer() {
         <img src={logo} alt="Logo" />
       </div>
       <div className="Footbar_contents_wrapper">
-        <span className='Footbar_content1'><strong>You are building india's future,</strong>we are building yours.</span>
+        {/* <span className='Footbar_content1'><strong>You are building india's future,</strong>we are building yours.</span> */}
       </div>
       <div className="icons_wrapper">
         <img src={LinkedIn} alt="LinkedIn" />
