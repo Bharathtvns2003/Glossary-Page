@@ -61,7 +61,7 @@
     margin-top: 120px;
     align-items: center;
     border-bottom: 1px solid var(--colors-base-color-16, rgba(255, 255, 255, 0.16));
-    background: black;
+    background: #1e1e1e;
     display: flex;
     align-items: center;
     gap: 25px;
@@ -70,10 +70,12 @@
     padding-left: 96px;
     top: 0;
     overflow-x: scroll;
+
   }
 
 .A_Z_Box button {
     color: var(--foreground-70, var(--colors-base-color-70, rgba(255, 255, 255, 0.70)));
+    
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -85,7 +87,7 @@
 }
 
 .A_Z_Box button:hover {
-    transform: scale(1.5);
+    transform: scale(1.7);
 }
 
 @media (max-width: 768px) {
@@ -143,15 +145,15 @@
     position: fixed;
     top: 0;
     right: 0;
-    background-color: black;
+    background-color: #1e1e1e;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 10px;
     z-index: 999;
-    gap: 0px;
+    gap: 2px;
     overflow-y: scroll;
     display: none;
 }
